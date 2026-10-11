@@ -96,10 +96,8 @@ app.get('/api/download', async (req, res) => {
   }
 });
 
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log('сервер работает на порту ' + PORT);
-  });
-}
+app.listen(PORT, () => {
+  console.log('сервер работает на порту ' + PORT);
+});
 
 module.exports = app;
