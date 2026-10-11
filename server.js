@@ -99,5 +99,3 @@ app.get('/api/download', async (req, res) => {
 app.listen(PORT, () => {
   console.log('сервер работает на порту ' + PORT);
 });
-
-module.exports = app;
