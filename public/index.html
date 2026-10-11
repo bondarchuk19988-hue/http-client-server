@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP клиент</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTTP клиент для сбора инфы</h1>
+        <p style="color: #666; font-size: 13px;">Учебная практика</p>
+        
+        <div class="input-group">
+            <input type="text" id="kw" placeholder="Введи слово (javascript, nodejs...)">
+            <button onclick="doSearch()">Найти</button>
+        </div>
+
+        <div id="urlsBlock" class="d-none">
+            <h3>Найденные ссылки</h3>
+            <div id="urlsList"></div>
+        </div>
+
+        <div id="progBlock" class="progress">
+            <div id="pbar" class="progress-bar" style="width: 0%">0%</div>
+        </div>
+
+        <h3>Сохраненное (оффлайн)</h3>
+        <div id="savedList"></div>
+        
+        <div id="viewer" class="viewer-container">
+            <iframe id="viewerFrame"></iframe>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
