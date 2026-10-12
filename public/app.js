@@ -1,4 +1,4 @@
-const API = window.location.origin;
+const API = '';
 
 function doSearch() {
     const kw = document.getElementById('kw').value.trim();
@@ -108,7 +108,6 @@ function showContent(url) {
                 viewer.scrollIntoView({ behavior: 'smooth' });
             })
             .catch(() => {
-                // Если стили не загрузились, показываем как есть
                 frame.srcdoc = saved[url];
                 viewer.classList.add('show');
                 viewer.scrollIntoView({ behavior: 'smooth' });
