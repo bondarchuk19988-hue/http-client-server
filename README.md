@@ -23,5 +23,7 @@ Frontend:  JS, HTML5, CSS3
 
 1. Клонируйте репозиторий и перейдите в папку проекта:
    ```bash
-   git clone <ссылка_на_твой_репо>
+   git clone https://github.com/bondarchuk19988-hue/http-client-server.git
    cd http-client-server
+   npm install 
+   npm start 
